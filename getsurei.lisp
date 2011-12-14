@@ -2,7 +2,7 @@
 ;-*- coding: utf-8 -*-
 ; Author: nakinor
 ; Created: 2011-12-12
-; Revised: 2011-12-12
+; Revised: 2011-12-14
 
 ; setq ではなくて defvar にしないと SBCL がうるさい
 ; Windows の SBCL では文字コードを CP932 にする
@@ -24,4 +24,4 @@
    30)
   )
 
-(format t "月齢は約~a日です。~%"  *getsurei*)
+(format t "月齢は約~a日だよん。~%"  *getsurei*)
