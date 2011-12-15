@@ -1,6 +1,6 @@
 /* Author: nakinor
  * Created: 2011-04-15
- * Revised: 2011-04-15
+ * Revised: 2011-12-15
  */
 
 /* 月齢を計算して表示するプログラム */
@@ -21,9 +21,9 @@ int main(void) {
   t_st = localtime(&timer);
 
   printf("現在は %d年 %d月 %d日です。\n",
-	 t_st->tm_year + 1900,
-	 t_st->tm_mon + 1,
-	 t_st->tm_mday);
+         t_st->tm_year + 1900,
+         t_st->tm_mon + 1,
+         t_st->tm_mday);
 
   /* 西暦から11を引いてさらに19で割る。で、その余りに11を掛ける。 */
   a = (((t_st->tm_year + 1900) - 11) % 19) * 11;
