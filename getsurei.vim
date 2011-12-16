@@ -1,6 +1,8 @@
 " Author: nakinor
 " Created: 2011-12-11
-" Revised: 2011-12-12
+" Revised: 2011-12-16
+
+" 月齢を計算して求めるプログラム
 
 " Vim はシステムによって得られる日付の書式が異なるんだって
 " 自分の場合は下記のようになっているので lc_time で判定させた
@@ -24,5 +26,6 @@ function! Getsurei()
     let s:b_month = s:dic[strftime("%b")]
     let s:c_day = strftime("%d")
     let s:getsurei = (s:a_year + s:b_month + s:c_day) % 30
-    echo printf("月齢は約 %s 日です。", s:getsurei)
+    echo printf("今日は%s年%s月%s日です。月齢は約%s日です。",
+\               strftime("%Y"), strftime("%m"), strftime("%d"), s:getsurei)
 endfunction

@@ -2,7 +2,9 @@
 # -*- coding: utf-8 -*-
 # Author: nakinor
 # Created: 2011-04-15
-# Revised: 2011-04-15
+# Revised: 2011-12-16
+
+# 月齢を計算して求めるプログラム
 
 import datetime
 d = datetime.datetime.today()
@@ -11,4 +13,5 @@ a = ((d.year - 11) % 19) * 11
 b = dict[d.month]
 c = d.day
 getsurei = (a + b + c) % 30
-print("月齢は約{0}日だよん。".format(getsurei))
+print("今日は{0}年{1}月{2}日です。".format(d.year, d.month, d.day))
+print("月齢は約{0}日です。".format(getsurei))

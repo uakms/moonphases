@@ -1,6 +1,6 @@
 /* Author: nakinor
  * Created: 2011-04-15
- * Revised: 2011-12-15
+ * Revised: 2011-12-16
  */
 
 /* 月齢を計算して表示するプログラム */
@@ -20,7 +20,7 @@ int main(void) {
   /* 現在の時刻を tm 構造体に変換する */
   t_st = localtime(&timer);
 
-  printf("現在は %d年 %d月 %d日です。\n",
+  printf("今日は%d年%d月%d日です。\n",
          t_st->tm_year + 1900,
          t_st->tm_mon + 1,
          t_st->tm_mday);
@@ -77,7 +77,7 @@ int main(void) {
   //  printf("aの値は: %d\n", a);
   //  printf("bの値は: %d\n", b);
   //  printf("cの値は: %d\n", c);
-  printf("月齢は約 %d日になります。\n", getsurei);
+  printf("月齢は約%d日です。\n", getsurei);
 
   return 0;
 }

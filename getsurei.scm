@@ -2,7 +2,9 @@
 ;-*- coding: utf-8 -*-
 ; Author: nakinor
 ; Created: 2011-04-15
-; Revised: 2011-04-15
+; Revised: 2011-12-16
+
+; 月齢を計算して求めるプログラム
 
 (use srfi-19)
 
@@ -18,4 +20,8 @@
    30)
   )
 
-(display (format "月齢は約~s日だよん。\n"  getsurei))
+(display (format "今日は~s年~s月~s日です。\n月齢は約~s日です。\n"
+                 (date-year (current-date))
+                 (date-month (current-date))
+                 (date-day (current-date))
+                 getsurei))

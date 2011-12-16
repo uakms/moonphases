@@ -2,7 +2,7 @@
 
 
 ## Introduction
-Something like a `Hello, world!` program. These scripts are very simplified.
+Something like a 'Hello, world!' program. These scripts are very simplified.
 
 
 ## Functions
@@ -31,30 +31,36 @@ Add the following text to your HTML file, then open the file.
 ### Terminal
 Type the following command on terminal...
 
-    `clisp getsurei.lisp`
+`clisp getsurei.lisp`
 
-    `sbcl --script getsurei.lisp`
+`sbcl --script getsurei.lisp`
 
-    `lua getsurei.lua`
+`lua getsurei.lua`
 
-    `ocaml getsurei.ml`
+`ocaml getsurei.ml`
 
-    `python3 getsurei.py`
+`python3 getsurei.py`
 
-    `ruby getsurei.rb`
+`ruby getsurei.rb`
 
-    `gosh getsurei.scm`
+`gosh getsurei.scm`
 
-    `gcc -o getsurei getsurei.c` and `./getsurei`
+`sh getsurei.sh`
 
-On Windows environment, you should use the cocnvert program like nkf, iconv.
+`gcc -o getsurei getsurei.c` and `./getsurei`
 
-    `lua getsurei.lua | nkf32`
+`ghc getsurei.hs` and `./getsurei`
 
-    `ocaml getsurei.ml | iconv -f utf-8 -t cp932`
+On Windows environment, you should use the convert program like nkf, iconv.
+
+`lua getsurei.lua | nkf32`
+
+`ocaml getsurei.ml | iconv -f utf-8 -t cp932`
 
 
 ## News
+- Added the Shell and Haskell script. (2011-12-16)
+
 - Fixed bug elisp script and replaced tab with space character. Added the OCaml script. (2011-12-15)
 
 - Added the Lua script. (2011-12-14)
