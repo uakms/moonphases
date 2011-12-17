@@ -31,6 +31,8 @@ Add the following text to your HTML file, then open the file.
 ### Terminal
 Type the following command on terminal...
 
+`gawk -f getsurei.awk`
+
 `clisp getsurei.lisp`
 
 `sbcl --script getsurei.lisp`
@@ -38,6 +40,8 @@ Type the following command on terminal...
 `lua getsurei.lua`
 
 `ocaml getsurei.ml`
+
+`perl getsurei.pl`
 
 `python3 getsurei.py`
 
@@ -59,6 +63,8 @@ On Windows environment, you should use the convert program like nkf, iconv.
 
 
 ## News
+- Added the AWK and Perl script. (2011-12-17)
+
 - Added the Shell and Haskell script. (2011-12-16)
 
 - Fixed bug elisp script and replaced tab with space character. Added the OCaml script. (2011-12-15)
