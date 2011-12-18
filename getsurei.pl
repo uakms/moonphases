@@ -2,15 +2,15 @@
 # -*- coding: utf-8 -*-
 # Author: nakinor
 # Created: 2011-12-17
-# Revised: 2011-12-17
+# Revised: 2011-12-18
 
 # 月齢を計算して求めるプログラム
 
-@list = (0, 2, 0, 2, 2, 4, 5, 6, 7, 8, 9, 10);
+@a_list = (0, 2, 0, 2, 2, 4, 5, 6, 7, 8, 9, 10);
 ($day, $month, $year) = (localtime(time))[3..5];
 $year += 1900;
 my $a = (($year - 11) % 19) * 11;
-my $b = ($list[$month]);
+my $b = ($a_list[$month]);
 my $c = $day;
 $month += 1;     # b は求めてしまったので破壊代入をしちゃう
 my $getsurei = ($a + $b + $c) % 30;

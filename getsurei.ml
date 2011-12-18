@@ -1,8 +1,8 @@
-#!/usr/local/bin/ocaml
+#!/usr/local/bin/ocamlrun ocaml
 (*
    Author: nakinor
    Created: 2011-12-14
-   Revised: 2011-12-16
+   Revised: 2011-12-18
 
    月齢を計算して求めるプログラム
 *)

@@ -1,17 +1,14 @@
 " Author: nakinor
 " Created: 2011-12-11
-" Revised: 2011-12-16
+" Revised: 2011-12-18
 
 " 月齢を計算して求めるプログラム
 
-" Vim はシステムによって得られる日付の書式が異なるんだって
-" 自分の場合は下記のようになっているので lc_time で判定させた
-" 他言語のことは知らん
+" Vim はシステムによって得られる日付の書式が異なる
+" 自分の環境では下記のようになっていたので lc_time で判定
 " echo |   v:lang   |   v:ctype   |    v:lc_time       |
 " Mac  |     -      | en_US.UTF-8 |         -          |
 " Win  | ja_JP.SJIS |      C      | Japanese_Japan.932 |
-"
-" 変数をスクリプトローカルとなるようにした
 
 if v:lc_time =~ 'Japanese'
     let s:dic = {1: 0, 2: 2, 3: 0, 4: 2, 5: 2, 6: 4,
