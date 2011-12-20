@@ -1,7 +1,7 @@
 {-
    Author: nakinor <nakinor@gmail.com>
    Created: 2011-12-16
-   Revised: 2011-12-18
+   Revised: 2011-12-19
 
 月齢を計算して求めるプログラム
 
@@ -16,7 +16,6 @@
   ./getsurei
 -}
 
-import Data.Time.Clock
 import Data.Time.Format
 import Data.Time.LocalTime
 import System.Locale
@@ -27,7 +26,7 @@ main = do
   now <- getZonedTime
   let a_year = formatTime defaultTimeLocale "%Y" $ now
   let a_month = formatTime defaultTimeLocale "%m" $ now
-  let a_day =  formatTime defaultTimeLocale "%d" $ now
+  let a_day = formatTime defaultTimeLocale "%d" $ now
 
   let a = (mod ((read a_year :: Int) - 11) 19) * 11
   let b = a_array !! ((read a_month :: Int) - 1)
