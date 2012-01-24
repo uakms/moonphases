@@ -11,6 +11,8 @@
 実行はスクリプトとして
   ghci getsurei.hs
   main
+とするか
+  runhaskell getsurei.hs
 もしくは実行ファイルを作って
   ghc getsurei.hs
   ./getsurei
