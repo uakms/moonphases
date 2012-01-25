@@ -63,6 +63,8 @@ On Windows environment, you should use the convert program like nkf, iconv.
 
 
 ## News
+- Fixed bug ocaml script. (2012-01-25)
+
 - Added the AWK and Perl script. (2011-12-17)
 
 - Added the Shell and Haskell script. (2011-12-16)
