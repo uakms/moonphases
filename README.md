@@ -63,6 +63,8 @@ On Windows environment, you should use the convert program like nkf, iconv.
 
 
 ## News
+- Added the Java and C# sources. (2012-03-13)
+
 - Fixed bug ocaml script. (2012-01-25)
 
 - Added the AWK and Perl script. (2011-12-17)
@@ -80,5 +82,5 @@ On Windows environment, you should use the convert program like nkf, iconv.
 - First release. (2011-12-11)
 
 
----------
+-------
 nakinor
