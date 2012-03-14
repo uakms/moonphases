@@ -1,5 +1,5 @@
 {-
-   Author: nakinor <nakinor@gmail.com>
+   Author: nakinor
    Created: 2011-12-16
    Revised: 2011-12-19
 

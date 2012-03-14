@@ -1,5 +1,5 @@
 #!/bin/sh
-# Author: nakinor <nakinor@gmail.com>
+# Author: nakinor
 # Created: 2011-12-15
 # Revised: 2011-12-16
 

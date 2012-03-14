@@ -55,6 +55,8 @@ Type the following command on terminal...
 
 `ghc getsurei.hs` and `./getsurei`
 
+`javac Getsurei.java` and `java Getsurei`
+
 On Windows environment, you should use the convert program like nkf, iconv.
 
 `lua getsurei.lua | nkf32`

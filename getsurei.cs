@@ -21,7 +21,7 @@ namespace getsurei
             int a = 0, b = 0, c = 0;
             int getsurei = 0;
             DateTime dt= DateTime.Now;
-            // dt に入れた日時は明示的に int 設定しなくてもいいのかな？
+            // dt に入れた日時は明示的に int 型設定しなくてもいいのかな？
 
             a = ((dt.Year - 11) % 19) * 11;
             b = a_array[dt.Month - 1]; // Month は 1 から 12 を返す。
@@ -30,6 +30,7 @@ namespace getsurei
 
             Console.Write("今日は{0}年{1}月{2}日です。\n",
                            dt.Year, dt.Month, dt.Day);
+
             Console.Write("月齢は約{0}日です。\n", getsurei);
 
         }
