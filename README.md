@@ -65,6 +65,8 @@ On Windows environment, you should use the convert program like nkf, iconv.
 
 
 ## News
+- Fixed bug awk script. (2012-05-06)
+
 - Added the Java and C# sources. (2012-03-13)
 
 - Fixed bug ocaml script. (2012-01-25)
