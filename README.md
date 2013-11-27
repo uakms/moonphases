@@ -63,8 +63,12 @@ On Windows environment, you should use the convert program like nkf, iconv.
 
 `ocaml getsurei.ml | iconv -f utf-8 -t cp932`
 
+`go run getsurei.go`
+
 
 ## News
+- Added the golan source. (2013-11-27)
+
 - Fixed bug awk script. (2012-05-06)
 
 - Added the Java and C# sources. (2012-03-13)
