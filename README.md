@@ -57,17 +57,19 @@ Type the following command on terminal...
 
 `javac Getsurei.java` and `java Getsurei`
 
+`mcs getsurei.cs` and `mono getsurei.exe`
+
+`go run getsurei.go`
+
 On Windows environment, you should use the convert program like nkf, iconv.
 
 `lua getsurei.lua | nkf32`
 
 `ocaml getsurei.ml | iconv -f utf-8 -t cp932`
 
-`go run getsurei.go`
-
 
 ## News
-- Added the golan source. (2013-11-27)
+- Added the golang source. (2013-11-27)
 
 - Fixed bug awk script. (2012-05-06)
 
