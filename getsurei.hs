@@ -5,9 +5,6 @@
 
 月齢を計算して求めるプログラム
 
-日本語を使えるように下記を実行しておく
-  cabal update ; cabal install utf8-string
-
 実行はスクリプトとして
   ghci getsurei.hs
   main
@@ -21,7 +18,6 @@
 import Data.Time.Format
 import Data.Time.LocalTime
 import System.Locale
-{- import System.IO.UTF8 -}
 
 main = do
   let a_array = [0,2,0,2,2,4,5,6,7,8,9,10]
@@ -35,11 +31,6 @@ main = do
   let c = (read a_day :: Int)
   let getsurei = show (mod (a + b + c) 30)
 
-{-
-  System.IO.UTF8.putStrLn ("今日は" ++ a_year ++ "年" ++ a_month ++ "月"
-                           ++ a_day ++ "日です。")
-  System.IO.UTF8.putStrLn ("月齢は約" ++ getsurei ++ "日です。")
--}
   putStrLn ("今日は" ++ a_year ++ "年" ++ a_month ++ "月"
                            ++ a_day ++ "日です。")
   putStrLn ("月齢は約" ++ getsurei ++ "日です。")
