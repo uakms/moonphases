@@ -53,7 +53,7 @@ Type the following command on terminal...
 
 `gcc -o getsurei getsurei.c` and `./getsurei`
 
-`ghc getsurei.hs` and `./getsurei`
+`runhaskell getsurei.hs`
 
 `javac Getsurei.java` and `java Getsurei`
 
