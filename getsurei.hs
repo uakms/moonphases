@@ -1,7 +1,7 @@
 {-
    Author: nakinor
    Created: 2011-12-16
-   Revised: 2014-09-15
+   Revised: 2015-05-21
 
 月齢を計算して求めるプログラム
 
@@ -17,7 +17,7 @@
 
 import Data.Time.Format
 import Data.Time.LocalTime
-import System.Locale
+--import System.Locale
 
 main = do
   let a_array = [0,2,0,2,2,4,5,6,7,8,9,10]
