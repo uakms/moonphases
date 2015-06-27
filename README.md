@@ -33,9 +33,7 @@ Type the following command on terminal...
 
 `gawk -f getsurei.awk`
 
-`clisp getsurei.lisp`
-
-`sbcl --script getsurei.lisp`
+`clisp getsurei.lisp` or `sbcl --script getsurei.lisp`
 
 `lua getsurei.lua`
 
@@ -69,28 +67,68 @@ On Windows environment, you should use the convert program like nkf, iconv.
 
 
 ## News
-- Added the golang source. (2013-11-27)
+#### 2015-05-21
+- Removed System.Locale module in Haskell script.
 
-- Fixed bug awk script. (2012-05-06)
+#### 2015-04-28
+- Fixed bug Lua script.
 
-- Added the Java and C# sources. (2012-03-13)
+#### 2015-03-03
+- Fixed bug Vim script.
 
-- Fixed bug ocaml script. (2012-01-25)
+#### 2014-09-15
+- Removed utf8-string module in Haskell script.
 
-- Added the AWK and Perl script. (2011-12-17)
+#### 2013-11-27
+- Added the golang source.
 
-- Added the Shell and Haskell script. (2011-12-16)
+#### 2012-12-09
+- Fixed bug shell script.
 
-- Fixed bug elisp script and replaced tab with space character. Added the OCaml script. (2011-12-15)
+#### 2012-05-06
+- Fixed bug awk script.
 
-- Added the Lua script. (2011-12-14)
+#### 2012-03-13
+- Added the Java and C# sources.
 
-- Added the Common Lisp script. (2011-12-12)
+#### 2012-01-25
+- Fixed bug ocaml script.
 
-- Added the Vim script. (2011-12-11)
+#### 2011-12-17
+- Added the AWK and Perl script.
 
-- First release. (2011-12-11)
+#### 2011-12-16
+- Added the Shell and Haskell script.
 
+#### 2011-12-15
+- Fixed bug elisp script and replaced tab with space character.
+
+- Added the OCaml script.
+
+#### 2011-12-14
+- Added the Lua script.
+
+#### 2011-12-12
+- Added the Common Lisp script.
+
+#### 2011-12-11
+- First release.
+
+- Added the Vim script.
+
+#### 2011-06-14
+- Added the JavaScript code.
+
+#### 2011-04-15
+- Added the C source.
+
+- Added the Scheme script.
+
+- Added the Python3 script.
+
+- Added the Emacs Lisp.
+
+- Created the Ruby script.
 
 -------
 nakinor
