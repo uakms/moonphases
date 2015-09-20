@@ -59,6 +59,11 @@ Type the following command on terminal...
 
 `go run getsurei.go`
 
+`clang -framework Foundation -o getsurei getsurei.m` and `./getsurei`
+
+`xcrun -sdk macosx swiftc -o getsurei getsurei.swift` and `./getsurei`
+(or `/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift getsurei.swift`)
+
 On Windows environment, you should use the convert program like nkf, iconv.
 
 `lua getsurei.lua | nkf32`
@@ -67,6 +72,9 @@ On Windows environment, you should use the convert program like nkf, iconv.
 
 
 ## News
+#### 2015-09-20
+- Added the Objective-C and Swift source.
+
 #### 2015-05-21
 - Removed System.Locale module in Haskell script.
 
