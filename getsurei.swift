@@ -1,6 +1,6 @@
 /* Author: nakinor
  * Created: 2015-09-20
- * Revised: 2015-09-20
+ * Revised: 2015-09-21
  */
 
 /* 月齢を計算して表示するプログラム */
@@ -22,7 +22,7 @@ let format_day = NSDateFormatter()
 format_day.dateFormat = "dd"
 let day = format_day.stringFromDate(date).toInt()!
 
-let a = (((year + 1900) - 11) % 19 ) * 11
+let a = ((year - 11) % 19 ) * 11
 let b = a_array[month - 1]
 let c = day
 let getsurei = (a + b + c) % 30
