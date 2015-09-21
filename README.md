@@ -64,6 +64,10 @@ Type the following command on terminal...
 `xcrun -sdk macosx swiftc -o getsurei getsurei.swift` and `./getsurei`
 (or `/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift getsurei.swift`)
 
+`c++ getsurei.cc -o getsurei` and `./getsurei`
+
+`fsharpc getsurei.fs` and `mono getsurei.exe`
+
 On Windows environment, you should use the convert program like nkf, iconv.
 
 `lua getsurei.lua | nkf32`
@@ -72,6 +76,9 @@ On Windows environment, you should use the convert program like nkf, iconv.
 
 
 ## News
+#### 2015-09-21
+- Added the C++ and F# source.
+
 #### 2015-09-20
 - Added the Objective-C and Swift source.
 
