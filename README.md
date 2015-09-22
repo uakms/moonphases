@@ -64,7 +64,7 @@ Type the following command on terminal...
 `xcrun -sdk macosx swiftc -o getsurei getsurei.swift` and `./getsurei`
 (or `/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift getsurei.swift`)
 
-`c++ getsurei.cc -o getsurei` and `./getsurei`
+`clang++ getsurei.cc -o getsurei` and `./getsurei`
 
 `fsharpc getsurei.fs` and `mono getsurei.exe`
 
