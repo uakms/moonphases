@@ -61,12 +61,14 @@ Type the following command on terminal...
 
 `clang -framework Foundation -o getsurei getsurei.m` and `./getsurei`
 
-`xcrun -sdk macosx swiftc -o getsurei getsurei.swift` and `./getsurei`
-(or `/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift getsurei.swift`)
+`swiftc -o getsurei getsurei.swift` and `./getsurei`
+(or `swift getsurei.swift`)
 
 `clang++ getsurei.cc -o getsurei` and `./getsurei`
 
 `fsharpc getsurei.fs` and `mono getsurei.exe`
+
+`node getsurei-node.js`
 
 On Windows environment, you should use the convert program like nkf, iconv.
 
@@ -76,6 +78,12 @@ On Windows environment, you should use the convert program like nkf, iconv.
 
 
 ## News
+#### 2015-11-18
+- Changed Swift code from 1.1 to 2.0.
+
+#### 2015-11-08
+- Added the JavaScript for nodejs.
+
 #### 2015-09-21
 - Added the C++ and F# source.
 
