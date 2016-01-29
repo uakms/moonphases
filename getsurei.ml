@@ -1,8 +1,7 @@
-#!/usr/local/bin/ocamlrun ocaml
 (*
    Author: nakinor
    Created: 2011-12-14
-   Revised: 2012-01-25
+   Revised: 2016-01-29
 
    月齢を計算して求めるプログラム
 *)
@@ -25,6 +24,6 @@ let c = a_day;;
 let getsurei = (a + b + c) mod 30;;
 
 (* 表示 *)
-Printf.printf "今日は%d年%d月%d日です。\n月齢は約%d日です。"
+Printf.printf "今日は%d年%d月%d日です。月齢は約%d日です。"
   a_year m_month a_day getsurei;
 print_newline(); flush_all();;

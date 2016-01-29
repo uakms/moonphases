@@ -1,8 +1,7 @@
-#!/usr/local/bin/gawk -f
 # -*- coding: utf-8 -*-
 # Author: nakinor
 # Created: 2011-12-17
-# Revised: 2012-05-06
+# Revised: 2016-01-29
 
 # 月齢を計算して求めるプログラム
 
@@ -16,7 +15,7 @@ BEGIN {
     c = strftime("%d");
     getsurei = (a + b + c) % 30;
 
-    printf "今日は%s年%s月%s日です。\n",
+    printf "今日は%s年%d月%d日です。",
         strftime("%Y"), strftime("%m"), strftime("%d");
     printf "月齢は約%s日です。\n", getsurei;
 }

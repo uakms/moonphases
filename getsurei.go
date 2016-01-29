@@ -1,6 +1,6 @@
 /* Author: nakinor
  * Created: 2013-11-27
- * Revised: 2015-05-01
+ * Revised: 2016-01-29
  */
 
 /* 月齢を計算して表示するプログラム */
@@ -23,6 +23,6 @@ func main() {
 
 	getsurei = (a + b + c) % 30
 
-	fmt.Printf("今日は%d年%d月%d日です。\n", year, month, day)
+	fmt.Printf("今日は%d年%d月%d日です。", year, month, day)
 	fmt.Printf("月齢は約%d日です。\n", getsurei)
 }

@@ -1,6 +1,6 @@
 /* Author: nakinor
  * Created: 2015-09-20
- * Revised: 2015-09-21
+ * Revised: 2016-01-29
  */
 
 /* 月齢を計算して表示するプログラム */
@@ -31,7 +31,7 @@ int main() {
   NSInteger c = day;
   NSInteger getsurei = (a + b + c) % 30;
 
-  printf("今日の日付は%ld年%ld月%ld日です。\n", year, month, day);
+  printf("今日は%ld年%ld月%ld日です。", year, month, day);
   printf("月齢は約%ld日です。\n", getsurei);
 
   return 0;

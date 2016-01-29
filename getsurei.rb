@@ -1,8 +1,7 @@
-#!/usr/local/bin/ruby
 # -*- coding: utf-8 -*-
 # Author: nakinor
 # Created: 2011-04-15
-# Revised: 2011-12-18
+# Revised: 2016-01-29
 
 # 月齢を計算して求めるプログラム
 
@@ -14,5 +13,5 @@ b = a_hash[a_date.month]
 c = a_date.day
 getsurei = (a + b + c) % 30
 
-puts "今日は#{a_date.year}年#{a_date.month}月#{a_date.day}日です。"
-print "月齢は約#{getsurei}日です。\n"
+print "今日は#{a_date.year}年#{a_date.month}月#{a_date.day}日です。"
+puts "月齢は約#{getsurei}日です。"

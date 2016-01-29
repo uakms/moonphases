@@ -1,7 +1,7 @@
 #!/bin/sh
 # Author: nakinor
 # Created: 2011-12-15
-# Revised: 2015-12-25
+# Revised: 2016-01-29
 
 # 月齢を計算して求めるプログラム
 
@@ -37,5 +37,5 @@ c=$a_day
 getsurei=$(( ((a + b + c) % 30) ))
 
 # 変数の参照には $ を付ける
-printf '今日は%s年%s月%s日です。\n' $a_year $a_month $a_day
+printf '今日は%s年%s月%s日です。' $a_year $a_month $a_day
 printf '月齢は約%d日です。\n' $getsurei

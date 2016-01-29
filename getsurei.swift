@@ -1,6 +1,6 @@
 /* Author: nakinor
  * Created: 2015-09-20
- * Revised: 2015-11-17
+ * Revised: 2016-01-29
  */
 
 /* 月齢を計算して表示するプログラム */
@@ -29,8 +29,7 @@ let getsurei = (a + b + c) % 30
 
 // 自分の環境はまだ swift 1.1 なので。アップデートしたら print にする。
 // swift 2 にした。
-print("今日は\(year)年\(month)月\(day)日です。")
-print("月齢は約\(getsurei)日です。")
+print("今日は\(year)年\(month)月\(day)日です。月齢は約\(getsurei)日です。")
 
 /* println を print に変更するだけではダメだったわ。
  * hoge.toInt()! を Int(hoge)! にしなければいけない。

@@ -1,6 +1,6 @@
 ﻿/* Author: nakinor
  * Created: 2012-03-13
- * Revised: 2012-03-13
+ * Revised: 2016-01-29
  */
 
 // Visual C# による月齢表示プログラム(コンソール)
@@ -28,7 +28,7 @@ namespace getsurei
             c = dt.Day;
             getsurei = (a + b + c) % 30;
 
-            Console.Write("今日は{0}年{1}月{2}日です。\n",
+            Console.Write("今日は{0}年{1}月{2}日です。",
                            dt.Year, dt.Month, dt.Day);
 
             Console.Write("月齢は約{0}日です。\n", getsurei);

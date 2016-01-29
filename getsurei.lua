@@ -1,8 +1,7 @@
-#!/usr/local/bin/lua
 -- -*- coding: utf-8 -*-
 -- Author: nakinor
 -- Created: 2011-12-14
--- Revised: 2015-04-28
+-- Revised: 2016-01-29
 
 -- 月齢を計算して求めるプログラム
 
@@ -16,5 +15,7 @@ c = os.date("%d")
 getsurei = math.floor((a + b + c) % 30)
 
 -- Vim script に似てる？
-print ("今日は" .. os.date("%Y") .. "年" .. os.date("%m") .. "月"
- .. os.date("%d") .. "日です。\n月齢は約" .. getsurei .. "日です。")
+print ("今日は" .. os.date("%Y") .. "年"
+    .. assert(tonumber(os.date("%m"))) .. "月"
+    .. assert(tonumber(os.date("%d"))) .. "日です。"
+    .. "月齢は約" .. getsurei .. "日です。")

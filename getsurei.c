@@ -1,6 +1,6 @@
 /* Author: nakinor
  * Created: 2011-04-15
- * Revised: 2011-12-18
+ * Revised: 2016-01-29
  */
 
 /* 月齢を計算して表示するプログラム */
@@ -39,7 +39,7 @@ int main(void) {
   getsurei = (a + b + c) % 30;
 
   /* 結果を出力する */
-  printf("今日は%d年%d月%d日です。\n",
+  printf("今日は%d年%d月%d日です。",
          t_st->tm_year + 1900,
          t_st->tm_mon + 1,
          t_st->tm_mday);

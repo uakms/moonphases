@@ -1,8 +1,7 @@
-#!/usr/local/bin/python3
 # -*- coding: utf-8 -*-
 # Author: nakinor
 # Created: 2011-04-15
-# Revised: 2011-12-18
+# Revised: 2016-01-29
 
 # 月齢を計算して求めるプログラム
 
@@ -16,5 +15,5 @@ c = a_date.day
 getsurei = (a + b + c) % 30
 
 print("今日は{0}年{1}月{2}日です。".format(a_date.year,
-                                           a_date.month, a_date.day))
+                                           a_date.month, a_date.day), end="")
 print("月齢は約{0}日です。".format(getsurei))

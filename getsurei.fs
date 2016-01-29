@@ -1,7 +1,7 @@
 (*
    Author: nakinor
    Created: 2015-09-21
-   Revised: 2015-09-21
+   Revised: 2016-01-29
 
    月齢を計算して求めるプログラム
 *)
@@ -20,5 +20,5 @@ let c = date.Day;;
 let getsurei = (a + b + c) % 30;;
 
 (* 表示 *)
-Printf.printf "今日は%d年%d月%d日です。\n月齢は約%d日です。\n"
+Printf.printf "今日は%d年%d月%d日です。月齢は約%d日です。\n"
   date.Year date.Month date.Day getsurei;;
