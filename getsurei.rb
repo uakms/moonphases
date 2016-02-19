@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # Author: nakinor
 # Created: 2011-04-15
 # Revised: 2016-01-29

@@ -18,6 +18,8 @@ test: test-c test-cc test-cs test-fs test-m test-swift test-ml test-hs test-go
 	@python3 getsurei.py
 	@printf "Ruby:    "
 	@ruby getsurei.rb
+	@printf "mruby:   "
+	@mruby getsurei.rb
 	@printf "Lua:     "
 	@lua getsurei.lua
 	@printf "LuaJIT:  "
