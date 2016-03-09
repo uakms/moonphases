@@ -1,6 +1,6 @@
 .PHONEY: test
 
-test: test-c test-cc test-cs test-fs test-m test-swift test-ml test-hs test-go
+test: test-c test-cc test-cs test-fs test-m test-swift test-ml test-hs test-go test-fortran
 	@echo "Run Script file ..."
 	@printf "gawk:    "
 	@gawk -f getsurei.awk
@@ -55,6 +55,8 @@ test: test-c test-cc test-cs test-fs test-m test-swift test-ml test-hs test-go
 	@./test-hs
 	@printf "Go:      "
 	@./test-go
+	@printf "Fortran: "
+	@./test-fortran
 
 test-c: getsurei.c
 	@clang -o test-c getsurei.c
@@ -85,6 +87,9 @@ test-hs: getsurei.hs
 
 test-go: getsurei.go
 	@go build -o test-go getsurei.go
+
+test-fortran: getsurei.f95
+	@gfortran -o test-fortran getsurei.f95
 
 clean:
 	find . -name "test*" -exec rm -f {} ';'

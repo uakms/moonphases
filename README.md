@@ -70,6 +70,8 @@ Type the following command on terminal...
 
 `node getsurei-node.js`
 
+`gfortran getsurei.f95 -o getsurei` and `./getsurei`
+
 On Windows environment, you should use the convert program like nkf, iconv.
 
 `lua getsurei.lua | nkf32`
@@ -78,6 +80,9 @@ On Windows environment, you should use the convert program like nkf, iconv.
 
 
 ## News
+#### 2015-03-09
+- Added the Fortran source.
+
 #### 2015-11-18
 - Changed Swift code from 1.1 to 2.0.
 
