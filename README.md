@@ -72,6 +72,8 @@ Type the following command on terminal...
 
 `gfortran getsurei.f95 -o getsurei` and `./getsurei`
 
+`php getsurei.php`
+
 On Windows environment, you should use the convert program like nkf, iconv.
 
 `lua getsurei.lua | nkf32`
@@ -80,6 +82,9 @@ On Windows environment, you should use the convert program like nkf, iconv.
 
 
 ## News
+#### 2015-03-12
+- Added the PHP source.
+
 #### 2015-03-09
 - Added the Fortran source.
 

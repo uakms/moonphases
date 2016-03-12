@@ -36,6 +36,8 @@ test: test-c test-cc test-cs test-fs test-m test-swift test-ml test-hs test-go t
 	@sbcl --script getsurei.lisp
 	@printf "Go:      "
 	@go run getsurei.go
+	@printf "PHP:     "
+	@php getsurei.php
 	@echo "Run execute Binary file ..."
 	@printf "C:       "
 	@./test-c
