@@ -74,6 +74,8 @@ Type the following command on terminal...
 
 `php getsurei.php`
 
+`tclsh getsurei.tcl`
+
 On Windows environment, you should use the convert program like nkf, iconv.
 
 `lua getsurei.lua | nkf32`
@@ -82,6 +84,9 @@ On Windows environment, you should use the convert program like nkf, iconv.
 
 
 ## News
+#### 2015-03-14
+- Added the Tcl source.
+
 #### 2015-03-12
 - Added the PHP source.
 

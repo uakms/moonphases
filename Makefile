@@ -38,6 +38,8 @@ test: test-c test-cc test-cs test-fs test-m test-swift test-ml test-hs test-go t
 	@go run getsurei.go
 	@printf "PHP:     "
 	@php getsurei.php
+	@printf "Tcl:     "
+	@tclsh getsurei.tcl
 	@echo "Run execute Binary file ..."
 	@printf "C:       "
 	@./test-c
