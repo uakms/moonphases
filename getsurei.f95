@@ -1,6 +1,6 @@
 ! Author: nakinor
 ! Created: 2016-03-09
-! Revised: 2016-03-09
+! Revised: 2016-03-15
 
 ! 月齢を計算して求めるプログラム
 
@@ -24,7 +24,7 @@ program getsurei
   c = val(3)
   getsu = mod((a + b + c), 30)
 
-  write (*, '(a, i4, a, i2, a, i2, a, i2, a)') &
+  write (*, '(a, i4, a, i0, a, i0, a, i0, a)') &
        "今日は", val(1), "年", val(2), "月", val(3), "日です。月齢は約", &
        getsu, "日です。"
 

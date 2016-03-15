@@ -1,7 +1,7 @@
 /*
  * Author: nakinor
  * Created: 2012-03-13
- * Revised: 2012-03-13
+ * Revised: 2016-03-15
  */
 
 // 月齢表示プログラム
@@ -25,7 +25,7 @@ public class Getsurei {
         c = day;
         getsurei = (a + b + c) % 30;
 
-        System.out.println("今日は" + year + "年"
+        System.out.print("今日は" + year + "年"
                             + month + "月" + day + "日です。");
         System.out.println("月齢は約" + getsurei + "日です。");
     }
