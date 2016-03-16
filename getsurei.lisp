@@ -1,13 +1,15 @@
 ;-*- coding: utf-8 -*-
 ; Author: nakinor
 ; Created: 2011-12-12
-; Revised: 2016-01-29
+; Revised: 2016-03-16
 
 ;; 月齢を計算して求めるプログラム
 
 ; setq ではなくて defvar にしないと SBCL がうるさい
 ; Windows の SBCL では文字コードを CP932 にする
+; clisp getsurei.lisp で実行
 ; sbcl --script getsurei.lisp で実行
+; ccl --load getsurei.lisp -eval '(quit)' で実行
 
 (defvar *alist* '((1 . 0) (2 . 2) (3 . 0) (4 . 2) (5 . 2) (6 . 4)
                   (7 . 5) (8 . 6) (9 . 7) (10 . 8) (11 . 9) (12 . 10)))

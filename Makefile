@@ -1,6 +1,16 @@
 .PHONEY: test
 
-test: test-c test-cc test-cs test-fs test-m test-swift test-ml test-hs test-go test-fortran
+test: test-c \
+	test-cc	\
+	test-cs \
+	test-fs \
+	test-m \
+	test-swift \
+	test-ml \
+	test-hs \
+	test-go \
+	test-fortran
+
 	@echo "Run Script file ..."
 	@printf "gawk:    "
 	@gawk -f getsurei.awk
@@ -12,7 +22,7 @@ test: test-c test-cc test-cs test-fs test-m test-swift test-ml test-hs test-go t
 	@ksh getsurei.sh
 	@printf "yash:    "
 	@yash getsurei.sh
-	@printf "Perl:    "
+	@printf "Perl5:   "
 	@perl getsurei.pl
 	@printf "Python3: "
 	@python3 getsurei.py
@@ -34,12 +44,15 @@ test: test-c test-cc test-cs test-fs test-m test-swift test-ml test-hs test-go t
 	@runhaskell getsurei.hs
 	@printf "SBCL:    "
 	@sbcl --script getsurei.lisp
+	@printf "Clozure: "
+	@ccl --load getsurei.lisp --eval '(quit)'
 	@printf "Go:      "
 	@go run getsurei.go
 	@printf "PHP:     "
 	@php getsurei.php
 	@printf "Tcl:     "
 	@tclsh getsurei.tcl
+
 	@echo "Run execute Binary file ..."
 	@printf "C:       "
 	@./test-c
