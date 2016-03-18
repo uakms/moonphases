@@ -70,7 +70,7 @@ Type the following command on terminal...
 
 `node getsurei-node.js`
 
-`gfortran getsurei.f95 -o getsurei` and `./getsurei`
+`gfortran getsurei.f90 -o getsurei` and `./getsurei`
 
 `php getsurei.php`
 
