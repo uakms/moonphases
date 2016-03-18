@@ -105,8 +105,8 @@ test-hs: getsurei.hs
 test-go: getsurei.go
 	@go build -o test-go getsurei.go
 
-test-fortran: getsurei.f95
-	@gfortran -o test-fortran getsurei.f95
+test-fortran: getsurei.f90
+	@gfortran -o test-fortran getsurei.f90
 
 clean:
 	find . -name "test*" -exec rm -f {} ';'
