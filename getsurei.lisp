@@ -1,7 +1,6 @@
-;-*- coding: utf-8 -*-
 ; Author: nakinor
 ; Created: 2011-12-12
-; Revised: 2016-03-16
+; Revised: 2016-03-19
 
 ;; 月齢を計算して求めるプログラム
 
@@ -20,13 +19,10 @@
 
 (defvar *getsurei*
   (mod
-   (+
-    (* (mod (- *a_year* 11) 19) 11)
-    (cdr (assoc *a_month* *alist*))
-    *a_day*
-    )
-   30)
-  )
+   (+ (* (mod (- *a_year* 11) 19) 11)
+      (cdr (assoc *a_month* *alist*))
+      *a_day*)
+   30))
 
 (format t "今日は~a年~a月~a日です。月齢は約~a日です。~%"
         *a_year* *a_month* *a_day* *getsurei*)

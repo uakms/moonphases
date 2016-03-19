@@ -1,14 +1,11 @@
 ﻿/* Author: nakinor
  * Created: 2012-03-13
- * Revised: 2016-01-29
+ * Revised: 2016-03-19
  */
 
 // Visual C# による月齢表示プログラム(コンソール)
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace getsurei
 {

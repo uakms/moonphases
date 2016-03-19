@@ -1,7 +1,6 @@
-;-*- coding: utf-8 -*-
 ; Author: nakinor
 ; Created: 2011-04-15
-; Revised: 2016-01-29
+; Revised: 2016-03-19
 
 ; 月齢を計算して求めるプログラム
 
@@ -12,13 +11,10 @@
 
 (define getsurei
   (remainder
-   (+
-    (* (remainder (- (date-year (current-date)) 11) 19) 11)
-    (cdr (assq (date-month (current-date)) hash))
-    (date-day (current-date))
-    )
-   30)
-  )
+   (+ (* (remainder (- (date-year (current-date)) 11) 19) 11)
+      (cdr (assq (date-month (current-date)) hash))
+      (date-day (current-date)))
+   30))
 
 (display (format "今日は~s年~s月~s日です。月齢は約~s日です。\n"
                  (date-year (current-date))

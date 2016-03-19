@@ -1,15 +1,15 @@
 .PHONEY: test
 
 test: test-c \
-	test-cc	\
+	test-cc \
 	test-cs \
+	test-fortran \
 	test-fs \
-	test-m \
-	test-swift \
-	test-ml \
-	test-hs \
 	test-go \
-	test-fortran
+	test-hs \
+	test-m \
+	test-ml \
+	test-swift
 
 	@echo "Run Script file ..."
 	@printf "gawk:    "

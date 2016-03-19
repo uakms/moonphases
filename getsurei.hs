@@ -1,27 +1,9 @@
 {-
    Author: nakinor
    Created: 2011-12-16
-   Revised: 2016-01-29
+   Revised: 2016-03-19
 
 月齢を計算して求めるプログラム
-
-実行はスクリプトとして
-
-  ghci getsurei.hs
-  main
-
-とするか
-
-  runhaskell getsurei.hs
-
-もしくは実行ファイルを作って
-
-  ghc getsurei.hs
-  ./getsurei
-
-GHC を 7.8.3 にアップデートしたところ、utf8-string を import して使用する部分がエラーになってしまうので使わないようにした。標準に組込まれたのかな？
-
-GHC を 7.10.1 にアップデートしたところ、System.Locale を import するとエラーになってしまうので使わないようにした。何でかね？
 -}
 
 import Data.Time.Format
