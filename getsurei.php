@@ -1,7 +1,7 @@
 <?php
 /* Author: nakinor
  * Created: 2016-03-12
- * Revised: 2016-03-12
+ * Revised: 2016-04-01
  *
  * 月齢を計算して求めるプログラム
 */
@@ -11,9 +11,9 @@ date_default_timezone_set('Asia/Tokyo');
 
 $a = ((date("Y") - 11) % 19) * 11;
 $b = $arr[date("n") - 1];
-$c = date("d");
+$c = date("j");
 $getsu = ($a + $b + $c) % 30;
 
-echo "今日は" . date("Y") . "年" . date("n") . "月" . date("d") . "日です。";
+echo "今日は" . date("Y") . "年" . date("n") . "月" . date("j") . "日です。";
 echo "月齢は約" . $getsu . "日です。\n";
 ?>

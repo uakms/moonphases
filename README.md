@@ -84,6 +84,9 @@ On Windows environment, you should use the convert program like nkf, iconv.
 
 
 ## News
+#### 2015-04-01
+- Fixed bug the Tcl and PHP sources.
+
 #### 2015-03-14
 - Added the Tcl source.
 

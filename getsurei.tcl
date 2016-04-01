@@ -1,6 +1,6 @@
 # Author: nakinor
 # Created: 2016-03-14
-# Revised: 2016-03-15
+# Revised: 2016-04-01
 
 # 月齢を計算して求めるプログラム
 
@@ -28,6 +28,7 @@ set b $arr($month)
 set c $day
 set getsu [expr ($a + $b + $c) % 30]
 set mon2 [expr $month * 1]
+set day2 [expr $day * 1]
 
-puts -nonewline "今日は$year\年$mon2\月$day\日です。"
+puts -nonewline "今日は$year\年$mon2\月$day2\日です。"
 puts "月齢は約$getsu\日です。"
