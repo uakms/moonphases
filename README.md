@@ -84,6 +84,9 @@ On Windows environment, you should use the convert program like nkf, iconv.
 
 
 ## News
+#### 2016-10-31
+- Changed Swift code from 2.0 to 3.0.
+
 #### 2016-08-09
 - Fixed bug the Tcl source.
 
@@ -175,4 +178,4 @@ On Windows environment, you should use the convert program like nkf, iconv.
 - Created the Ruby script.
 
 -------
-nakinor
+奈幾乃 (Umeda Akimasa)
