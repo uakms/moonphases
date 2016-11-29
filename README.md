@@ -177,5 +177,3 @@ On Windows environment, you should use the convert program like nkf, iconv.
 
 - Created the Ruby script.
 
--------
-奈幾乃 (Umeda Akimasa)
