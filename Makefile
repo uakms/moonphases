@@ -92,7 +92,7 @@ test-m: getsurei.m
 	@clang -framework Foundation -o test-m getsurei.m
 
 test-swift: getsurei.swift
-	@swiftc -o test-swift getsurei.swift
+	@xcrun --sdk `xcrun --show-sdk-path` swiftc -o test-swift getsurei.swift
 
 test-ml: getsurei.ml
 	@sed -e 's/#load "unix.cma";;//' getsurei.ml > test.ml
