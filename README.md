@@ -76,6 +76,8 @@ Type the following command on terminal...
 
 `tclsh getsurei.tcl`
 
+`Rscript getsurei.R`
+
 On Windows environment, you should use the convert program like nkf, iconv.
 
 `lua getsurei.lua | nkf32`
@@ -84,6 +86,9 @@ On Windows environment, you should use the convert program like nkf, iconv.
 
 
 ## News
+#### 2017-12-20
+- Added the R source.
+
 #### 2016-10-31
 - Changed Swift code from 2.0 to 3.0.
 
