@@ -1,6 +1,6 @@
 # Author: nakinor
 # Created: 2017-12-20
-# Revised: 2017-12-20
+# Revised: 2018-03-01
 
 # 月齢を計算して表示するプログラム
 
@@ -25,9 +25,9 @@ getsurei <- (a + b + c) %% 30
 cat("今日は")
 cat(year)
 cat("年")
-cat(month)
+cat(as.integer(month))
 cat("月")
-cat(day)
+cat(as.integer(day))
 cat("日です。")
 cat("月齢は約")
 cat(getsurei)
