@@ -78,6 +78,8 @@ Type the following command on terminal...
 
 `Rscript getsurei.R`
 
+`elixir getsurei.exs`
+
 On Windows environment, you should use the convert program like nkf, iconv.
 
 `lua getsurei.lua | nkf32`
@@ -86,6 +88,9 @@ On Windows environment, you should use the convert program like nkf, iconv.
 
 
 ## News
+#### 2018-03-02
+- Added the Elixir source.
+
 #### 2017-12-20
 - Added the R source.
 
